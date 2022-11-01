@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  background-color: #b2beb5;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 3vw;
+}
+aside {
+  width: 20vw;
+  height: 80vh;
+  display:flex;
+  flex-direction: column;
+}
+aside h3{
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+}
+main{
+    display:flex;
+    justify-content: center;
+}
+
+.slider_container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.slider{
+    width: 70%;
+}
+.box_pick{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.color_pick{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.other_func{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sketch_container{
+    display:flex;
+    width: 50vw;
+    height: 75vh;
+    border: 2px solid grey
+}

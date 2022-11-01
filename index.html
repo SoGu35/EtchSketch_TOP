@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Etch a Sketch</title>
+  </head>
+  <body>
+    <header>Etch a Sketch</header>
+    <main>
+    <aside>
+        <h3>Customisation</h3>
+<div class = "box_pick">
+    <p id = "box_select">Box selector</p>
+    <div class = "slider_container">
+    <input type = "range" min = "1" max = "25" class = "slider">
+    </div>
+</div>
+<div class = "color_pick">
+    <p>Color picker</p>
+    <input type = "color" id = "colorpicker">
+    <button id = "rainbow">Random</button>
+</div>
+<div class = "other_func">
+    <p>Other functions</p>
+    <button id = "eraser">Eraser</button>
+    <button id = "reset">Reset</button>
+</div>
+</div>
+    </aside>
+    <div class = "sketch_container"></div>
+</main>
+  </body>
+  <script src="script.js"></script>
+</html>
