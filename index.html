@@ -20,22 +20,26 @@
 <div class = "box_pick">
     <p id = "box_select">Box selector</p>
     <div class = "slider_container">
-    <input type = "range" min = "1" max = "25" class = "slider">
+    <input type = "range" min = "1" max = "50" class = "slider" oninput="sliderChange(this.value)">
+    <div id = "slider_info">25</div>
     </div>
 </div>
 <div class = "color_pick">
-    <p>Color picker</p>
-    <input type = "color" id = "colorpicker">
-    <button id = "rainbow">Random</button>
+    <p>Choose a Color!</p>
+    <div id = "picker_container">
+      <input type = "color" id = "colorpicker" value="#ffffff" onchange = changeColor(this.value)>
+      <p id = "pick_color"></p>
+    </div>
+    <button onclick = "randomColor()">Random</button>
 </div>
 <div class = "other_func">
     <p>Other functions</p>
-    <button id = "eraser">Eraser</button>
-    <button id = "reset">Reset</button>
+    <button id = "eraser" onclick = "erase()">Eraser</button>
+    <button id = "reset" onclick="cleargrid()">Reset</button>
 </div>
 </div>
     </aside>
-    <div class = "sketch_container"></div>
+    <div class = "sketch_container" id = "grid"></div>
 </main>
   </body>
   <script src="script.js"></script>
